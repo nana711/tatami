@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>石塚畳店</title>
+    <link rel="icon" href="./dist/icon/favicon.ico" />
+    <link rel="apple-touch-icon-precomposed" href="./dist/icon/apple-touch-icon.png" />
+    <meta name="description" content="" />
+    <meta name="theme-color" content="#162471">
+    <meta property="og:site_name" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="石塚畳店" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:locale" content="ja" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+</head>
+<body id="contact">
+    <header class="Header">
+        <div class="Header--inner">
+            <div class="phoneNum">
+                <p class="phoneNum_text">お気軽にお問い合わせください。</p>
+                <a class="phoneNum_num" href="tel:0298213331">029-821-3331</a>
+            </div>
+            <div class="Header--hams">
+                <span class="Header_ham"></span>
+            </div>
+            <nav class="grobalNav">
+                <ul class="grobalNav_list">
+                    <li class="grobalNav_list--item">
+                        <a href="../index.html#msg" class="item_link">
+                            石塚畳店の想い
+                        </a>
+                    </li>
+                    <li class="grobalNav_list--item">
+                        <a href="../case.html" class="item_link">
+                            制作事例
+                        </a>
+                    </li>
+                    <li class="grobalNav_list--item">
+                        <a href="../flow.html" class="item_link">
+                            ご利用の流れ
+                        </a>
+                    </li>
+                    <li class="grobalNav_list--item">
+                        <a href="../price.html" class="item_link">
+                            畳の種類と価格
+                        </a>
+                    </li>
+                    <li class="grobalNav_list--item">
+                        <a href="../manage.html" class="item_link">
+                            お手入れ方法
+                        </a>
+                    </li>
+                    <li class="grobalNav_list--item">
+                        <a href="#" class="item_link">
+                            お問い合わせ
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- header -->
+    <main class="main">
+        <div class="contact--inner">
+            <div class="contact--hero"></div>
+            <h1 class="contact--heading">
+                お問い合わせ </h1>
+            <div class="contact--content">
+                <div class="content--inner">
+                    <p class="content_text">この度は石塚畳店のサイトをご覧いただきありがとうございます。<br>
+                        お見積もりのご相談やご質問、その他お問い合わせはこちらのお問い合わせフォームからお願いいたします。後日担当者からご連絡いたします。 </p>
+                    <p class="content_text -warning">
+                        ※ご提供いただきましたお客様の個人情報は、お問い合わせの目的のみで利用します。
+                    </p>
+                    <div class="contact_input">
+                        <form method="post" action="index.php" enctype="multipart/form-data"> <input type="hidden" name="csrf_token" value="{$csrf_token}">
+                            <dl class="input--content">
+                                <dt class="content_title">お名前<span class="tag -required">必須</span></dt>
+                                <dd class="content_input"><input type="text" name="お名前" value="{$お名前}"><input type="hidden" name="required[]" value="お名前">
+                                    {if:$required.お名前}
+                                    <div class="error">{$required.お名前}</div>
+                                    {/if:$required.お名前}</dd>
+                            </dl>
+                            <dl class="input--content">
+                                <dt class="content_title">メールアドレス<span class="tag -required">必須</span></dt>
+                                <dd class="content_input"><input type="text" name="メールアドレス" value="{$メールアドレス}"><input type="hidden" name="required[]" value="メールアドレス">
+                                    {if:$required.メールアドレス}
+                                    <div class="error">{$required.メールアドレス}</div>
+                                    {/if:$required.メールアドレス}</dd>
+                            </dl>
+                            <dl class="input--content">
+                                <dt class="content_title">メールアドレス(確認用)<span class="tag -required">必須</span></dt>
+                                <dd class="content_input"><input type="text" name="メールアドレス(確認用)" value="{$メールアドレス(確認用)}"><input type="hidden" name="match[]" value="メールアドレス メールアドレス(確認用)">
+                                    {if:$match.メールアドレス}
+                                    <div class="error">{$match.メールアドレス}</div>
+                                    {/if:$match.メールアドレス}</dd>
+                            </dl>
+                            <dl class="input--content">
+                                <dt class="content_title">お電話番号<span class="tag -optional">任意</span></dt>
+                                <dd class="content_input"><input type="text" name="お電話番号" value="{$お電話番号}"></dd>
+                            </dl>
+                            <dl class="input--content">
+                                <dt class="content_title">お問い合わせ内容<span class="tag -required">必須</span></dt>
+                                <dd class="content_input"><textarea rows="6" cols="30" name="お問い合わせ内容" class="wide">{$お問い合わせ内容}</textarea><input type="hidden" name="required[]" value="お問い合わせ内容">
+                                    {if:$required.お問い合わせ内容}
+                                    <div class="error">{$required.お問い合わせ内容}</div>
+                                    {/if:$required.お問い合わせ内容}</dd>
+                            </dl>
+                            <div class="contact--btn_wrap">
+                                <div class="btn"><input type="submit" value="入力内容を確認する"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="Footer">
+        <div class="Footer--inner">
+            <nav class="FooterNav">
+                <ul class="FooterNav_list">
+                    <li class="FooterNav_list--item">
+                        <a href="../index.html#msg" class="item_link">
+                            石塚畳店の想い
+                        </a>
+                    </li>
+                    <li class="FooterNav_list--item">
+                        <a href="../case.html" class="item_link">
+                            制作事例
+                        </a>
+                    </li>
+                    <li class="FooterNav_list--item">
+                        <a href="../flow.html" class="item_link">
+                            ご利用の流れ
+                        </a>
+                    </li>
+                    <li class="FooterNav_list--item">
+                        <a href="../flow.html" class="item_link">
+                            畳の種類と価格
+                        </a>
+                    </li>
+                    <li class="FooterNav_list--item">
+                        <a href="../manage.html" class="item_link">
+                            お手入れ方法
+                        </a>
+                    </li>
+                    <li class="FooterNav_list--item">
+                        <a href="#" class="item_link">
+                            お問い合わせ
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="phoneNum">
+                <p class="phoneNum_text">お気軽にお問い合わせください。</p>
+                <a class="phoneNum_num" href="tel:0298213331">029-821-3331</a>
+            </div>
+            <p class="copyRight">© Ishitsuka Tatamiten. all rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../assets/js/common.js"></script>
+</body>
+</html>

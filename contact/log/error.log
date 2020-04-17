@@ -1,0 +1,7 @@
+[07-Apr-2020 19:01:25 Asia/Tokyo] PHP Warning:  fopen(header.html): failed to open stream: No such file or directory in /Users/nana/Library/Mobile Documents/com~apple~CloudDocs/dev/tatami/dev/contact/lib/tinyTemplate.php on line 78
+[07-Apr-2020 19:01:25 Asia/Tokyo] PHP Warning:  fopen(footer.html): failed to open stream: No such file or directory in /Users/nana/Library/Mobile Documents/com~apple~CloudDocs/dev/tatami/dev/contact/lib/tinyTemplate.php on line 78
+[07-Apr-2020 21:07:51 Asia/Tokyo] PHP Warning:  fopen(header.html): failed to open stream: No such file or directory in /Users/nana/Library/Mobile Documents/com~apple~CloudDocs/dev/tatami/dev/contact/lib/tinyTemplate.php on line 78
+[07-Apr-2020 21:07:51 Asia/Tokyo] PHP Warning:  fopen(footer.html): failed to open stream: No such file or directory in /Users/nana/Library/Mobile Documents/com~apple~CloudDocs/dev/tatami/dev/contact/lib/tinyTemplate.php on line 78
+[08-Apr-2020 21:20:00 Asia/Tokyo] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /Users/nana/Library/Mobile Documents/com~apple~CloudDocs/dev/tatami/dev/contact/lib/TransmitMail.php on line 1675
+[08-Apr-2020 21:47:12 Asia/Tokyo] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /Users/nana/Library/Mobile Documents/com~apple~CloudDocs/dev/tatami/dev/contact/lib/TransmitMail.php on line 1675
+[08-Apr-2020 21:48:07 Asia/Tokyo] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /Users/nana/Library/Mobile Documents/com~apple~CloudDocs/dev/tatami/dev/contact/lib/TransmitMail.php on line 1675

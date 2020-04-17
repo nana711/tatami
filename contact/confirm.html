@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>石塚畳店</title>
+    <link rel="icon" href="./dist/icon/favicon.ico" />
+    <link rel="apple-touch-icon-precomposed" href="./dist/icon/apple-touch-icon.png" />
+    <meta name="description" content="" />
+    <meta name="theme-color" content="#162471">
+    <meta property="og:site_name" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="石塚畳店" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:locale" content="ja" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+</head>
+<body id="contact">
+    <header class="Header">
+        <div class="Header--inner">
+            <div class="phoneNum">
+                <p class="phoneNum_text">お気軽にお問い合わせください。</p>
+                <a class="phoneNum_num" href="tel:0298213331">029-821-3331</a>
+            </div>
+            <div class="Header--hams">
+                <span class="Header_ham"></span>
+            </div>
+            <nav class="grobalNav">
+                <ul class="grobalNav_list">
+                    <li class="grobalNav_list--item">
+                        <a href="../index.html#msg" class="item_link">
+                            石塚畳店の想い
+                        </a>
+                    </li>
+                    <li class="grobalNav_list--item">
+                        <a href="../case.html" class="item_link">
+                            制作事例
+                        </a>
+                    </li>
+                    <li class="grobalNav_list--item">
+                        <a href="../flow.html" class="item_link">
+                            ご利用の流れ
+                        </a>
+                    </li>
+                    <li class="grobalNav_list--item">
+                        <a href="../price.html" class="item_link">
+                            畳の種類と価格
+                        </a>
+                    </li>
+                    <li class="grobalNav_list--item">
+                        <a href="../manage.html" class="item_link">
+                            お手入れ方法
+                        </a>
+                    </li>
+                    <li class="grobalNav_list--item">
+                        <a href="#" class="item_link">
+                            お問い合わせ
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- header -->
+    <main class="main">
+        <div class="contact--inner">
+            <div class="contact--hero"></div>
+            <h1 class="contact--heading">
+                お問い合わせ </h1>
+            <div class="contact--content">
+                <div class="content--inner">
+                    <div class="contact_confirm">
+                        <dt class="alpha">
+                            {loop:$params}</dt>
+                        <dl class="contact_confirm--content">
+                            <dt class="content_title">{$params[].key}&nbsp;</dt>
+                            <dd class="content_answer">{$params[].value.nl2br}&nbsp;</dd>
+                        </dl>
+                        {/loop:$params}
+                    </div>
+                    <div class="contact_btn_wrap">
+                        <form method="post" action="index.php" class="contact--btn">
+                            {$hiddens}
+                            <input type="hidden" name="page" value="input">
+                            <input type="submit" value="入力画面に戻る">
+                        </form>
+                        &nbsp;
+                        <form method="post" action="index.php" class="contact--btn -white">
+                            {$hiddens}
+                            <input type="hidden" name="page" value="finish">
+                            <input type="submit" value="送信する">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="Footer">
+        <div class="Footer--inner">
+            <nav class="FooterNav">
+                <ul class="FooterNav_list">
+                    <li class="FooterNav_list--item">
+                        <a href="../index.html#msg" class="item_link">
+                            石塚畳店の想い
+                        </a>
+                    </li>
+                    <li class="FooterNav_list--item">
+                        <a href="../case.html" class="item_link">
+                            制作事例
+                        </a>
+                    </li>
+                    <li class="FooterNav_list--item">
+                        <a href="../flow.html" class="item_link">
+                            ご利用の流れ
+                        </a>
+                    </li>
+                    <li class="FooterNav_list--item">
+                        <a href="../flow.html" class="item_link">
+                            畳の種類と価格
+                        </a>
+                    </li>
+                    <li class="FooterNav_list--item">
+                        <a href="../manage.html" class="item_link">
+                            お手入れ方法
+                        </a>
+                    </li>
+                    <li class="FooterNav_list--item">
+                        <a href="#" class="item_link">
+                            お問い合わせ
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="phoneNum">
+                <p class="phoneNum_text">お気軽にお問い合わせください。</p>
+                <a class="phoneNum_num" href="tel:0298213331">029-821-3331</a>
+            </div>
+            <p class="copyRight">© Ishitsuka Tatamiten. all rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../assets/js/common.js"></script>
+</body>
+</html>
