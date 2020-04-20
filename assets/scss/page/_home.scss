@@ -134,6 +134,7 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 50px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -154,7 +155,12 @@
 #home .secFlow .Flow_list--item {
     border: 1px solid #fff;
     padding: 30px;
-    height: 370px
+    height: auto;
+}
+
+#home .secFlow .Flow_list--item .item--text {
+    font-size: 1.6em;
+    line-height: 1.2;
 }
 
 @media screen and (min-width: 960px) {
@@ -170,6 +176,14 @@
 @media screen and (min-width: 960px) {
     #home .secFlow .Flow_list--item:not(:first-child) {
         margin-top: 0
+    }
+}
+
+
+
+@media screen and (min-width: 960px) {
+    #home .secFlow .Flow_list--item:nth-child(n+4) {
+        margin-top: 40px
     }
 }
 
@@ -311,6 +325,11 @@
     }
 
     .secPeople {
+        margin-top: 80px;
+
+        @include mq("tab") {
+            margin-top: 100px;
+        }
 
         .People--inner {
             @extend %inner;
@@ -318,11 +337,83 @@
 
         .People--heading {
             @extend %heading;
+        }
 
+        .People {
+            &_list {
+                margin-top: 50px;
+
+                @include mq("pc") {
+                    margin-top: 80px;
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                &--item {
+                    display: flex;
+                    flex-direction: column;
+
+                    @include mq("tab") {
+                        flex-direction: row;
+                    }
+
+                    &:nth-child(n+2) {
+                        margin-top: 50px;
+
+                        @include mq("pc") {
+                            margin-top: 0;
+                        }
+                    }
+                }
+
+                .item_img {
+                    text-align: center;
+
+
+                    img {
+                        width: 80%;
+
+                        @include mq("tab") {
+                            width: 200px;
+                        }
+                    }
+
+
+                }
+
+                .item--right {
+                    @include mq("tab") {
+                        margin-left: 30px;
+                        width: 60%;
+                    }
+
+                    margin-top: 20px;
+                }
+
+                .item--heading {
+                    border-bottom: 1px solid #fff;
+                    padding-bottom: 10px;
+                    font-size: 1.8em;
+                    font-family: $ff-mincho;
+                    font-weight: bold;
+                }
+
+                .item--text {
+                    font-size: 1.4em;
+                    margin-top: 20px;
+                    line-height: 1.5;
+                }
+            }
         }
     }
 
     .secFlow {
+        background: #2b2626;
+        margin: 85px 0;
+
+        @include mq("tab") {
+            margin: 100px 0;
+        }
 
         .Flow--inner {
             @extend %inner;
@@ -335,6 +426,26 @@
 
         .Flow--btn {
             @extend %btn;
+        }
+
+        .Flow_list--item {
+            .item--btn_wrap {
+                @extend %square_btn;
+                margin-top: 30px;
+            }
+
+            .item_img {
+                margin-top: 20px;
+                text-align: center;
+
+                img {
+                    width: 70%;
+
+                    @include mq("pc") {
+                        width: 225px;
+                    }
+                }
+            }
         }
     }
 
