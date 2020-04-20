@@ -1,0 +1,48 @@
+@charset "utf-8";
+@charset "utf-8";
+
+
+/*-------------------
+reset
+-------------------*/
+@import "base/reset";
+
+/*-------------------
+setting（変数指定）
+-------------------*/
+@import "setting/size";
+// @import "setting/zIndex";
+@import "setting/color";
+@import "setting/font";
+// @import "setting/";
+
+/*-------------------
+mixin
+-------------------*/
+@import "base/mixin";
+
+/*-------------------
+base
+-------------------*/
+@import "base/base";
+
+/*-------------------
+module
+-------------------*/
+// @import "module/module";
+// @import "module/form";
+// @import "module/js";
+@import "module/btn";
+// @import "module/";
+
+/*-------------------
+layout
+-------------------*/
+@import "layout/header";
+@import "layout/footer";
+
+/*-------------------
+page
+-------------------*/
+@import "page/home";
+@import "page/page";

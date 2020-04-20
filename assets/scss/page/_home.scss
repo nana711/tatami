@@ -1,0 +1,352 @@
+#home .secMv {
+    background-image: url(../image/top/mv.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh
+}
+
+#home .secMsg {
+    position: relative;
+    margin: 85px 0
+}
+
+@media screen and (min-width: 960px) {
+    #home .secMsg {
+        margin: 100px 0
+    }
+}
+
+#home .secMsg .Msg--inner {
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl
+}
+
+#home .secMsg .Msg--heading {
+    margin-left: 60px
+}
+
+@media screen and (min-width: 960px) {
+    #home .secMsg .Msg--heading {
+        margin-left: 52px
+    }
+}
+
+
+#home .secMsg .Msg--text {
+    font-size: 1.6rem;
+    font-family: "YuKyokasho"
+}
+
+@media screen and (min-width: 560px) {
+    #home .secMsg .Msg--text {
+        font-size: 2em
+    }
+}
+
+#home .secMsg .Msg--text:not(:last-of-type) {
+    margin-left: 20px
+}
+
+@media screen and (min-width: 560px) {
+    #home .secMsg .Msg--text:not(:last-of-type) {
+        margin-left: 55px
+    }
+}
+
+#home .secMsg .Msg--square_big {
+    position: absolute;
+    left: 5.33333%;
+    z-index: -1;
+    top: -20px;
+    width: 100px;
+    height: 100px;
+    background-color: #7a300a
+}
+
+@media screen and (min-width: 560px) {
+    #home .secMsg .Msg--square_big {
+        width: 300px;
+        height: 300px
+    }
+}
+
+#home .secMsg .Msg--square_small {
+    position: absolute;
+    right: 5.33333%;
+    bottom: 20px;
+    z-index: -1;
+    width: 90px;
+    height: 90px;
+    background-color: #35547a
+}
+
+@media screen and (min-width: 560px) {
+    #home .secMsg .Msg--square_small {
+        width: 150px;
+        height: 150px;
+        right: 16%
+    }
+}
+
+#home .secCase {
+    background: #2F2F38;
+    padding: 80px 0
+}
+
+@media screen and (min-width: 560px) {
+    #home .secCase {
+        padding: 100px 0
+    }
+}
+
+#home .secCase .Case--slider {
+    margin-top: 50px
+}
+
+@media screen and (min-width: 960px) {
+    #home .secCase .Case--slider {
+        margin-top: 80px
+    }
+}
+
+#home .secCase .Case--btn {
+    margin-left: auto;
+    margin-top: 50px
+}
+
+#home .secFlow {
+    padding: 80px 0
+}
+
+@media screen and (min-width: 560px) {
+    #home .secFlow {
+        padding: 100px 0
+    }
+}
+
+#home .secFlow .Flow_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+@media screen and (min-width: 960px) {
+    #home .secFlow .Flow_list {
+        margin-top: 80px;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row
+    }
+}
+
+#home .secFlow .Flow_list--item {
+    border: 1px solid #fff;
+    padding: 30px;
+    height: 370px
+}
+
+@media screen and (min-width: 960px) {
+    #home .secFlow .Flow_list--item {
+        width: calc((100% - 52px) / 3)
+    }
+}
+
+#home .secFlow .Flow_list--item:not(:first-child) {
+    margin-top: 40px
+}
+
+@media screen and (min-width: 960px) {
+    #home .secFlow .Flow_list--item:not(:first-child) {
+        margin-top: 0
+    }
+}
+
+#home .secFlow .Flow_list--item .item--heading {
+    text-align: center;
+    font-family: "YuKyokasho";
+    font-weight: bold;
+    font-size: 1.8em
+}
+
+@media screen and (min-width: 560px) {
+    #home .secFlow .Flow_list--item .item--heading {
+        font-size: 2.2em
+    }
+}
+
+#home .secFlow .Flow_list--item .item--text {
+    margin-top: 30px
+}
+
+#home .secFlow .Flow--btn {
+    margin-left: auto;
+    margin-top: 50px
+}
+
+#home .secInfo {
+    margin-bottom: 120px;
+    position: relative
+}
+
+#home .secInfo .Info--square {
+    position: absolute;
+    left: 5.33333%;
+    z-index: -1;
+    top: -20px;
+    width: 100px;
+    height: 100px;
+    background-color: #9d8232
+}
+
+@media screen and (min-width: 560px) {
+    #home .secInfo .Info--square {
+        width: 300px;
+        height: 300px
+    }
+}
+
+#home .secInfo .Info--square.-purple {
+    top: -130px;
+    left: -10px;
+    background-color: #3c2252
+}
+
+#home .secInfo .Info--map {
+    margin-top: 50px
+}
+
+@media screen and (min-width: 960px) {
+    #home .secInfo .Info--map {
+        margin-top: 80px
+    }
+}
+
+#home .secInfo .Info--text {
+    margin-top: 30px;
+    line-height: 1.7;
+    font-size: 1.6em;
+}
+
+@media screen and (min-width: 960px) {
+    #home .secInfo .Info--text {
+        margin-top: 80px
+    }
+}
+
+// 死んだあと 
+
+#home {
+    .secMv {
+        position: relative;
+
+        .Mv--inner {
+            @extend %inner;
+        }
+
+        .Mv--logo {
+            position: absolute;
+            width: 200px;
+            height: auto;
+            top: 50vh;
+            left: 50vw;
+            transform: translate(-50%, -50%);
+
+
+            @include mq("tab") {
+                width: 320px;
+                height: auto;
+            }
+
+            img {
+
+
+                @include mq("tab") {}
+            }
+        }
+    }
+
+    .secMsg {
+
+        .Msg--inner {
+            @extend %inner;
+        }
+
+        .Msg--heading {
+            font-size: 2.8em;
+            font-weight: bold;
+            font-family: $ff-mincho;
+            letter-spacing: 0.3em;
+
+            @include mq("pc") {
+                font-size: 3.5em;
+            }
+        }
+    }
+
+    .secCase {
+
+        .Case--inner {
+            @extend %inner;
+        }
+
+        .Case--heading {
+            @extend %heading;
+        }
+
+        .Case--btn {
+            @extend %btn;
+        }
+    }
+
+    .secPeople {
+
+        .People--inner {
+            @extend %inner;
+        }
+
+        .People--heading {
+            @extend %heading;
+
+        }
+    }
+
+    .secFlow {
+
+        .Flow--inner {
+            @extend %inner;
+        }
+
+        .Flow--heading {
+            @extend %heading;
+
+        }
+
+        .Flow--btn {
+            @extend %btn;
+        }
+    }
+
+    .secInfo {
+
+        .Info--inner {
+            @extend %inner;
+        }
+
+        .Info--heading {
+            @extend %heading;
+
+        }
+    }
+}

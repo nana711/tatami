@@ -1,0 +1,5 @@
+$breakpoints: ("sp": "screen and (min-width: 0px) and (max-width: 559px)",
+    "tab": "screen and (min-width: 560px)",
+    "pc": "screen and (min-width: 960px)",
+    "ie": "screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none)"
+) !default;

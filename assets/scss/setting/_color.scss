@@ -1,0 +1,14 @@
+$color: (bg-gray : #5c5757,
+    bg-brown : #2F2F38,
+    yellow: #9d8232,
+    blue: #35547a,
+    red : #7a300a,
+    green:#506C33,
+    white:#fff,
+    purple : #3c2252,
+    bg-contact : #f0f0f0,
+    font-black: #222222);
+
+@function color($key) {
+    @return map-get($color, $key);
+}
