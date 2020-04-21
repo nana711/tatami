@@ -9,12 +9,12 @@
 
 #home .secMsg {
     position: relative;
-    margin: 85px 0
+    padding: 85px 0
 }
 
 @media screen and (min-width: 960px) {
     #home .secMsg {
-        margin: 100px 0
+        padding: 100px 0
     }
 }
 
@@ -158,6 +158,18 @@
     height: auto;
 }
 
+@media screen and (min-width: 560px) {
+    #home .secFlow .Flow_list--item {
+        height: 550px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    #home .secFlow .Flow_list--item {
+        height: auto;
+    }
+}
+
 #home .secFlow .Flow_list--item .item--text {
     font-size: 1.6em;
     line-height: 1.2;
@@ -216,9 +228,9 @@
 
 #home .secInfo .Info--square {
     position: absolute;
-    left: 5.33333%;
+    left: 60px;
     z-index: -1;
-    top: -20px;
+    top: 10px;
     width: 100px;
     height: 100px;
     background-color: #9d8232
@@ -232,8 +244,8 @@
 }
 
 #home .secInfo .Info--square.-purple {
-    top: -130px;
-    left: -10px;
+    top: -50px;
+    left: 0px;
     background-color: #3c2252
 }
 

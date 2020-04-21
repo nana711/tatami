@@ -14,7 +14,8 @@ setting（変数指定）
 // @import "setting/zIndex";
 @import "setting/color";
 @import "setting/font";
-// @import "setting/";
+@import "setting/js";
+
 
 /*-------------------
 mixin
@@ -31,7 +32,6 @@ module
 -------------------*/
 // @import "module/module";
 // @import "module/form";
-// @import "module/js";
 @import "module/btn";
 // @import "module/";
 

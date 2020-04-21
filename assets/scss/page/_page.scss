@@ -1,6 +1,5 @@
 #case {
-  .main {
-  }
+  .main {}
 
   .case {
     &--inner {
@@ -66,8 +65,7 @@
 #manage {
   .manage {
     &--hero {
-      background: url(../image/page/manage/manage_hero.jpg) no-repeat center
-        center/cover;
+      background: url(../image/page/manage/manage_hero.jpg) no-repeat center center/cover;
       position: absolute;
       top: 0;
       bottom: 0;
@@ -153,8 +151,7 @@
 #flow {
   .flow {
     &--hero {
-      background: url(../image/page/flow/flow_hero.jpg) no-repeat center
-        center/cover;
+      background: url(../image/page/flow/flow_hero.jpg) no-repeat center center/cover;
       position: absolute;
       top: 0;
       bottom: 0;
@@ -253,8 +250,7 @@
 #price {
   .price {
     &--hero {
-      background: url(../image/page/price/price_hero.jpg) no-repeat center
-        center/cover;
+      background: url(../image/page/price/price_hero.jpg) no-repeat center center/cover;
       position: absolute;
       top: 0;
       bottom: 0;
@@ -463,6 +459,88 @@
           }
         }
       }
+
+      .content_sonota {
+        margin-top: 50px;
+
+        .sonota_heading {
+          font-weight: bold;
+          font-family: $ff-mincho;
+          font-size: 2em;
+          color: color(font-black);
+
+          @include mq("tab") {
+            font-size: 2.2em;
+          }
+        }
+
+        .sonota_items {
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: 30px;
+          justify-content: space-between;
+        }
+
+        .sonota--item {
+          background-color: color(green);
+          width: 100%;
+
+          @include mq("tab") {
+            width: 385px;
+          }
+
+          &:nth-child(n + 1) {
+            margin-top: 25px;
+          }
+
+          @include mq("pc") {
+            &:nth-child(n + 1) {
+              margin-top: 0;
+            }
+
+            &:nth-child(n + 3) {
+              margin-top: 25px;
+            }
+          }
+
+          .item_name {
+            background-color: #29381A;
+            font-size: 1.6em;
+            font-family: $ff-mincho;
+            font-weight: bold;
+            padding: 10px 0 10px 15px;
+          }
+
+          .item_content {
+            padding: 20px 10px 40px 25px;
+          }
+
+          .item_img {
+            text-align: center;
+            margin-bottom: 10px;
+
+            img {}
+          }
+
+          .item--info {
+
+            display: flex;
+            line-height: 1.8;
+
+            &:last-child {
+              margin-top: 10px;
+            }
+
+            .item--info_title {
+              margin-right: 10px;
+            }
+
+            .item--info_desc {
+              letter-spacing: 0.2em;
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -472,8 +550,7 @@
 #contact {
   .contact {
     &--hero {
-      background: url(../image/page/contact/contact_hero.jpg) no-repeat top
-        center/cover;
+      background: url(../image/page/contact/contact_hero.jpg) no-repeat top center/cover;
       position: absolute;
       top: 0;
       bottom: 0;
@@ -551,7 +628,7 @@
       align-items: flex-start;
     }
 
-    & + .input--content {
+    &+.input--content {
       margin-top: 30px;
 
       @include mq("pc") {
@@ -652,7 +729,7 @@
   }
 
   .contact_confirm--content {
-    + .contact_confirm--content {
+    +.contact_confirm--content {
       padding-top: 40px;
     }
 
@@ -684,6 +761,7 @@
       @extend %contact_btn;
     }
   }
+
 }
 
 // contact
