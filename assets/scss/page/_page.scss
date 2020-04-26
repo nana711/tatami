@@ -56,6 +56,11 @@
           }
         }
       }
+
+      .group_name {
+        font-size: 16px;
+        margin-top: 10px;
+      }
     }
   }
 }
@@ -447,6 +452,84 @@
 
             &:last-child {
               margin-top: 10px;
+            }
+
+            .item--info_title {
+              margin-right: 10px;
+            }
+
+            .item--info_desc {
+              letter-spacing: 0.2em;
+            }
+          }
+        }
+      }
+
+      .content_uragaeshi {
+        margin-top: 50px;
+
+        .uragaeshi_heading {
+          font-weight: bold;
+          font-family: $ff-mincho;
+          font-size: 2em;
+          color: color(font-black);
+
+          @include mq("tab") {
+            font-size: 2.2em;
+          }
+        }
+
+        .uragaeshi_items {
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: 30px;
+          justify-content: space-between;
+        }
+
+        .uragaeshi--item {
+          background-color: color(yellow);
+          width: 100%;
+
+          @include mq("pc") {
+            width: 500px;
+          }
+
+          &:nth-child(n + 1) {
+            margin-top: 25px;
+          }
+
+          @include mq("pc") {
+            &:nth-child(n + 1) {
+              margin-top: 0;
+            }
+          }
+
+          .item_name {
+            background-color: #674D00;
+            font-size: 1.6em;
+            font-family: $ff-mincho;
+            font-weight: bold;
+            padding: 10px 0 10px 15px;
+          }
+
+          .item_img {
+            width: 250px;
+          }
+
+          .item_content {
+            padding: 20px 10px 40px 25px;
+            display: flex;
+            // @include mq("tab") {
+            //   display: flex;
+            // }
+          }
+
+          .item--info {
+            display: flex;
+            line-height: 1.8;
+
+            &:last-child {
+              margin-top: 30px;
             }
 
             .item--info_title {
