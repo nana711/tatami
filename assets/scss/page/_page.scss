@@ -487,7 +487,7 @@
         }
 
         .uragaeshi--item {
-          background-color: color(yellow);
+          background-color: #6D5B7C;
           width: 100%;
 
           @include mq("pc") {
@@ -505,7 +505,7 @@
           }
 
           .item_name {
-            background-color: #674D00;
+            background-color: color(purple);
             font-size: 1.6em;
             font-family: $ff-mincho;
             font-weight: bold;

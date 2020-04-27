@@ -1,5 +1,5 @@
 .Header {
-    position: absolute;
+    position: fixed;
     z-index: 1000;
     height: 80px;
     width: 100%;
@@ -13,7 +13,12 @@
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: space-between;
+    }
+
+    .flex_right {
+        display: flex;
+        align-items: center;
     }
 
     .phoneNum {
@@ -89,6 +94,7 @@
             background-color: color(bg-brown);
             position: fixed;
             top: 0px;
+            right: 0;
 
             &::before {
                 transform: translateY(15px) rotate(45deg);
