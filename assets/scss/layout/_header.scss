@@ -21,6 +21,14 @@
         align-items: center;
     }
 
+    .Header--logo {
+        .logo_img {
+            img {
+                width: 50%;
+            }
+        }
+    }
+
     .phoneNum {
         position: relative;
         display: inline-block;
